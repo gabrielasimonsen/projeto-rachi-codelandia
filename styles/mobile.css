@@ -1,0 +1,86 @@
+/*Nav-Bar / Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1.2rem 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-toggle {
+  border: transparent;
+  background: transparent;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 20px;
+  background-color: var(--menu-background);
+  z-index: 2;
+
+}
+
+.nav-link {
+  text-align: center;
+  list-style: none;
+  width: 100%;
+  margin: 10px 0;
+}
+
+header a {
+    font-family: var(--font-texto);
+    color: var(--texto-color);
+    text-decoration: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.fadeIn {
+  animation: fadeIn .3s ease forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(0, -20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0)
+  }
+}
